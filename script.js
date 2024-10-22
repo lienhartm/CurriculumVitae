@@ -20,10 +20,6 @@ function research() {
 
     document.getElementById('main').style.backgroundColor = 'white';
     document.getElementById('main').innerHTML =     "<section class='research'>"
-                                                    + "<ul>"
-                                                    + "<li>Stagiaire - ELAN Formation - Brunsstat-Didenheim</li>"
-                                                    + "<li>Informaticien Polyvalent - INFORMATIQUE+ IAE34 - Montpellier</li>"
-                                                    + "</ul>"
                                                     + "</section>";
 
 }
@@ -35,7 +31,10 @@ function cv() {
                                                     + "<h2>Comptétences</h2>"
                                                     + "<p></p>"
                                                     + "<h2>Expériences</h2>"
-                                                    + "<p></p>"
+                                                    + "<ul>"
+                                                    + "<li>Stagiaire - ELAN Formation - Brunsstat-Didenheim</li>"
+                                                    + "<li>Informaticien Polyvalent - INFORMATIQUE+ IAE34 - Montpellier</li>"
+                                                    + "</ul>"
                                                     + "<h2>Formations</h2>"
                                                     + "<ul>"
                                                     + "<li>2023 - en cours Licence Professionnelle - Métiers de l'informatique : conception, développement et tests de logiciels – UHA4.0 Université de Haute Alsace</li>"
