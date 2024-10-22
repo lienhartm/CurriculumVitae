@@ -111,6 +111,7 @@ function contact() {
     emailjs.init("UH2k-274wOM005RNe");
 })();
 
+window.onload = function() {
         document.getElementById('contact-form').addEventListener('submit', function(event) {
             event.preventDefault();
 
@@ -121,3 +122,4 @@ function contact() {
                     alert('Erreur lors de l\'envoi : ' + JSON.stringify(error));
                 });
         });
+    }
