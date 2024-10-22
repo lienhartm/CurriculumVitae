@@ -20,6 +20,15 @@ function research() {
 
     document.getElementById('main').style.backgroundColor = 'white';
     document.getElementById('main').innerHTML =     "<section class='research'>"
+                                                    + "<ul>"
+                                                    + "<li>Organisations: Scrum, méthode Agile</li>"
+                                                    + "<li>Gestion de projet: Jira / Confluence / Slack / Jitsi</li>"
+                                                    + "<li>Conception: Cahier des charge, maquettage, UML</li>"
+                                                    + "<li>Language: HTML / CSS / JS / PHP / SQL / JAVA</li>"
+                                                    + "<li>Framework: React.js / Next.js / Svelt.js / Wordpress / Symphony"
+                                                    + "<li>Logiciel: Linux / Git / Docker</li>"
+                                                    + "<li>Certification: PIX, SQL, JAVA (notions), Développement coté client</li>"
+                                                    + "</ul>"
                                                     + "</section>";
 
 }
@@ -43,16 +52,6 @@ function cv() {
                                                     + "<li>2019 / 2020 - Certificat Professionelle - Webmestre Junior - CNAM OCCITANIE</li>"
                                                     + "<li>2001 / 2003 - Bac Pro Equipements et installations électrique - Pullversheim</li>"
                                                     + "<li>1999 / 2001 - CAP / BEP électrotechnique - Blaise Pascal Colmar</li>"
-                                                    + "</ul>"
-                                                    + "<h2>Informations complémentaires</h2>"
-                                                    + "<ul>"
-                                                    + "<li>Organisations: Scrum, méthode Agile</li>"
-                                                    + "<li>Gestion de projet: Jira / Confluence / Slack / Jitsi</li>"
-                                                    + "<li>Conception: Cahier des charge, maquettage, UML</li>"
-                                                    + "<li>Language: HTML / CSS / JS / PHP / SQL / JAVA</li>"
-                                                    + "<li>Framework: React.js / Next.js / Svelt.js / Wordpress / Symphony"
-                                                    + "<li>Logiciel: Linux / Git / Docker</li>"
-                                                    + "<li>Certification: PIX, SQL, JAVA (notions), Développement coté client</li>"
                                                     + "</ul>"
                                                     + "<a href='/document/' download class='telecharger'>Télécharger le C.V.</a>"
                                                     + "</section>";
@@ -80,25 +79,9 @@ function contact() {
 
     document.getElementById('main').style.backgroundColor = 'white';
     document.getElementById('main').innerHTML =     "<section class='contact'>"
-                                                    + "<form action='mailto:lienhartm8@gmail.com' method=''>"
-                                                    + "<label for='nom'>Nom : </label>"
+                                                    + "<p>Vous pouvez me m'écrire à cette adresse : lienhartm8@gmail.com</p>"
                                                     + "<br />"
-                                                    + "<input id='nom' type='text' name='nom' value='...'>"
-                                                    + "<br />"
-                                                    + "<label for='courriel'>Courriel : </label>"
-                                                    + "<br />"
-                                                    + "<input id='courriel' type='email' name='courriel' value='...'>"
-                                                    + "<br />"
-                                                    + "<label for='sujet'>Sujet : </label>"
-                                                    + "<br />"
-                                                    + "<input id='sujet' type='text' name='sujet' value='...'>"
-                                                    + "<br />"
-                                                    + "<label for='message'>Message : </label>"
-                                                    + "<br />"
-                                                    + "<textarea id='message' name='message' cols='24' rows='10' value='...'></textarea>"
-                                                    + "<br />"
-                                                    + "<input type='submit' value='Envoyer' class='center'>"
-                                                    + "</form>"
+                                                    + "<p>Vous pouvez aussi télécharger mon <a href='./document.CV-LIENHART_Michaël.pdf' download >curriculum vitae</a>.</p>"
                                                     + "</section>";
 
 }
