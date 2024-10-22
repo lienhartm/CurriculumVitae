@@ -1,0 +1,14 @@
+{
+  "name": "curriculumvitae",
+  "version": "1.0.0",
+  "description": "Curriculum Vitae",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LIENHART MICHAEL",
+  "license": "ISC",
+  "dependencies": {
+    "emailjs": "^4.0.3"
+  }
+}

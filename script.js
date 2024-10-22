@@ -81,6 +81,43 @@ function contact() {
                                                     + "<p>Vous pouvez me m'écrire à cette adresse : lienhartm8@gmail.com</p>"
                                                     + "<br />"
                                                     + "<p>Vous pouvez aussi télécharger mon <a href='./document/CV-LIENHART_Michaël.pdf' download class='telecharger'>curriculum vitae</a>.</p>"
+                                                    + "<br />"
+                                                    + "<form id='contact-form'>"
+                                                    + "<label for='name'>Nom:</label>"
+                                                    + "<input type='text' id='name' name='user_name'>"
+                                                    + "<label for='email'>Email:</label>"
+                                                    + "<input type='email' id='email' name='user_email'>"
+                                                    + "<label for='object'>Objet:</label>"
+                                                    + "<input type='object' id='object' name='user_object'>"
+                                                    + "<label for='message'>Message:</label>"
+                                                    + "<textarea id='message' name='user_message'></textarea>"
+                                                    + "<input type='submit' value='Envoyer'>"
+                                                    + "</form>"
                                                     + "</section>";
 
 }
+
+/*
+        user_name
+        user_email
+        user_object
+        user_message
+
+        TON_USER_ID         UH2k-274wOM005RNe
+        TON_SERVICE_ID      service_q8abpda
+        TON_TEMPLATE_ID     template_0i70oag
+*/
+(function(){
+    emailjs.init("UH2k-274wOM005RNe");
+})();
+
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            emailjs.sendForm('service_q8abpda', 'template_0i70oag', this)
+                .then(function() {
+                    alert('Message envoyé avec succès!');
+                }, function(error) {
+                    alert('Erreur lors de l\'envoi : ' + JSON.stringify(error));
+                });
+        });
