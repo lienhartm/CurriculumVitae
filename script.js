@@ -53,7 +53,6 @@ function cv() {
                                                     + "<li>2001 / 2003 - Bac Pro Equipements et installations électrique - Pullversheim</li>"
                                                     + "<li>1999 / 2001 - CAP / BEP électrotechnique - Blaise Pascal Colmar</li>"
                                                     + "</ul>"
-                                                    + "<a href='/document/' download class='telecharger'>Télécharger le C.V.</a>"
                                                     + "</section>";
 
 }
@@ -81,7 +80,7 @@ function contact() {
     document.getElementById('main').innerHTML =     "<section class='contact'>"
                                                     + "<p>Vous pouvez me m'écrire à cette adresse : lienhartm8@gmail.com</p>"
                                                     + "<br />"
-                                                    + "<p>Vous pouvez aussi télécharger mon <a href='./document.CV-LIENHART_Michaël.pdf' download >curriculum vitae</a>.</p>"
+                                                    + "<p>Vous pouvez aussi télécharger mon <a href='./document/CV-LIENHART_Michaël.pdf' download class='telecharger'>curriculum vitae</a>.</p>"
                                                     + "</section>";
 
 }
