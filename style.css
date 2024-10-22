@@ -56,45 +56,31 @@ section {
 }
 
 section.home {
-    display: flex;
-    justify-content: center;
-    
+    text-align: center;
 }
 /**/
 /* RESEARCH */
 /**/
 section.research {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    text-align: center;
 }
 /**/
 /* CV */
 /**/
 section.cv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 50px 0px 50px 0px;
+    text-align: center;
 }
 /**/
 /* PROJECT */
 /**/
 section.projet {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    text-align: center;
 }
 /**/
 /* CONTACT */
 /**/
 section.contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 form {
     padding: 50px;
