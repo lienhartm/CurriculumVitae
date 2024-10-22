@@ -95,6 +95,23 @@ function contact() {
                                                     + "</form>"
                                                     + "</section>";
 
+    (function(){
+        emailjs.init("UH2k-274wOM005RNe");
+    })();
+    
+    window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+    
+                emailjs.sendForm('service_q8abpda', 'template_0i70oag', this)
+                    .then(function() {
+                        alert('Message envoyé avec succès!');
+                    }, function(error) {
+                        alert('Erreur lors de l\'envoi : ' + JSON.stringify(error));
+                    });
+            });
+        }
+
 }
 
 /*
@@ -107,19 +124,3 @@ function contact() {
         TON_SERVICE_ID      service_q8abpda
         TON_TEMPLATE_ID     template_0i70oag
 */
-(function(){
-    emailjs.init("UH2k-274wOM005RNe");
-})();
-
-window.onload = function() {
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            emailjs.sendForm('service_q8abpda', 'template_0i70oag', this)
-                .then(function() {
-                    alert('Message envoyé avec succès!');
-                }, function(error) {
-                    alert('Erreur lors de l\'envoi : ' + JSON.stringify(error));
-                });
-        });
-    }
