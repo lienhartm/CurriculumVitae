@@ -106,8 +106,10 @@ function contact() {
                 emailjs.sendForm('service_q8abpda', 'template_0i70oag', this)
                     .then(function() {
                         alert('Message envoyé avec succès!');
+                        console.log('Message envoyé avec succès!');
                     }, function(error) {
                         alert('Erreur lors de l\'envoi : ' + JSON.stringify(error));
+                        console.log('Erreur lors de l\'envoi : ' + JSON.stringify(error));
                     });
             });
         }
