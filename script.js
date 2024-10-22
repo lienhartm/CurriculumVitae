@@ -2,10 +2,6 @@
 'use strict'
 //
 
-(function(){
-    emailjs.init('UH2k-274wOM005RNe');
-})();
-
 function home() {
 
     document.getElementById('main').style.backgroundColor = 'white';
@@ -78,6 +74,10 @@ function project() {
                                                     + "</section>";
 
 }
+
+(function(){
+    emailjs.init('UH2k-274wOM005RNe');
+})();
 
 function contact() {
 
