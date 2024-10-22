@@ -51,10 +51,14 @@ footer {
 /**/
 /* HOME */
 /**/
+section {
+    min-height: 500px;
+}
+
 section.home {
     display: flex;
     justify-content: center;
-    align-items: center;
+    
 }
 /**/
 /* RESEARCH */
