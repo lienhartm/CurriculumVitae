@@ -82,7 +82,7 @@ function contact() {
                                                     + "<br />"
                                                     + "<p>Vous pouvez aussi télécharger mon <a href='./document/CV-LIENHART_Michaël.pdf' download class='telecharger'>curriculum vitae</a>.</p>"
                                                     + "<br />"
-                                                    + "<form id='contact-form'>"
+                                                    + "<form id='contact-form' action='https://api.emailjs.com/api/v1.0/email/send' method='POST'>"
                                                     + "<label for='name'>Nom:</label>"
                                                     + "<input type='text' id='name' name='user_name'>"
                                                     + "<label for='email'>Email:</label>"
