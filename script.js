@@ -75,10 +75,6 @@ function project() {
 
 }
 
-(function(){
-    emailjs.init('UH2k-274wOM005RNe');
-})();
-
 function contact() {
 
     document.getElementById('main').style.backgroundColor = 'white';
@@ -87,44 +83,47 @@ function contact() {
                                                     + "<br />"
                                                     + "<p>Vous pouvez aussi télécharger mon <a href='./document/CV-LIENHART_Michaël.pdf' download class='telecharger'>curriculum vitae</a>.</p>"
                                                     + "<br />"
-                                                    + "<form id='contact-form' action='https://api.emailjs.com/api/v1.0/email/send' method='POST'>"
-                                                    + "<label for='name'>Nom:</label>"
-                                                    + "<input type='text' id='name' name='user_name'>"
-                                                    + "<label for='email'>Email:</label>"
-                                                    + "<input type='email' id='email' name='user_email'>"
-                                                    + "<label for='object'>Objet:</label>"
-                                                    + "<input type='object' id='object' name='user_object'>"
-                                                    + "<label for='message'>Message:</label>"
-                                                    + "<textarea id='message' name='user_message'></textarea>"
-                                                    + "<input type='submit' value='Envoyer'>"
+                                                    + "<form id='form'>"
+                                                    + "<div class='field'>"
+                                                    + "<label for='from_name'>from_name</label>"
+                                                    + "<input type='text' name='from_name' id='from_name'>"
+                                                    + "</div>"
+                                                    + "<div class='field'>"
+                                                    + "<label for='user_name'>user_name</label>"
+                                                    + "<input type='text' name='user_name' id='user_name'>"
+                                                    + "</div>"
+                                                    + "<div class='field'>"
+                                                    + "<label for='message'>message</label>"
+                                                    + "<textarea type='text' name='message' id='message' rows='4' cols='50'></textarea>"
+                                                    + "</div>"
+                                                    + "<div class='field'>"
+                                                    + "<label for='user_email'>user_email</label>"
+                                                    + "<input type='text' name='user_email' id='user_email'>"
+                                                    + "</div>"
+                                                    + "<input type='submit' id='button' value='Send Email' >"
                                                     + "</form>"
                                                     + "</section>";
-    
-    window.onload = function() {
 
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-    
-                emailjs.sendForm('service_q8abpda', 'template_0i70oag', this)
-                    .then(function() {
-                        alert('Message envoyé avec succès!');
-                        console.log('Message envoyé avec succès!');
-                    }, function(error) {
-                        alert('Erreur lors de l\'envoi : ' + JSON.stringify(error));
-                        console.log('Erreur lors de l\'envoi : ' + JSON.stringify(error));
-                    });
+        const btn = document.getElementById('button');
+
+        document.getElementById('form')
+         .addEventListener('submit', function(event) {
+           event.preventDefault();
+        
+           btn.value = 'Sending...';
+        
+           const serviceID = 'default_service';
+           const templateID = 'template_0i70oag';
+        
+           emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+              btn.value = 'Send Email';
+              alert('Sent!');
+            }, (err) => {
+              btn.value = 'Send Email';
+              alert(JSON.stringify(err));
             });
-        }
+        });
 
 }
 
-/*
-        user_name
-        user_email
-        user_object
-        user_message
-
-        TON_USER_ID         UH2k-274wOM005RNe
-        TON_SERVICE_ID      service_q8abpda
-        TON_TEMPLATE_ID     template_0i70oag
-*/
