@@ -8,7 +8,7 @@ function home() {
     document.getElementById('main').innerHTML =     "<section class='home'>"
                                                     + "<p>Bienvenue sur mon site de présentation !</p>"
                                                     + "<br />"
-                                                    + "<p>Je suis étudiant en licence professionelle Métiers de l'informatique : conception, développement et tests de logiciels.</p>"
+                                                    + "<p>Je suis étudiant à l'UHA ( Université de Haute Alsace ) dans le parcous 4.0 en licence professionelle Métiers de l'informatique : conception, développement et tests de logiciels.</p>"
                                                     + "<br />"
                                                     + "<p>Vous pouvez me m'écrire à cette adresse : lienhartm8@gmail.com</p>"
                                                     + "<br />"
