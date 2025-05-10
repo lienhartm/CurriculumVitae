@@ -64,7 +64,6 @@ nav a:hover {
 main {
     margin: 20px auto;
     padding: 20px;
-    min-height: 650px;
     max-width: 800px;
     background-color: white;
     border-radius: 10px;
