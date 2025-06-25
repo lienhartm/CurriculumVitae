@@ -121,7 +121,7 @@ function contact() {
         
            btn.value = 'Sending...';
         
-           const serviceID = 'default_service';
+           const serviceID = 'service_f67zgrl';
            const templateID = 'template_0i70oag';
         
            emailjs.sendForm(serviceID, templateID, this)
